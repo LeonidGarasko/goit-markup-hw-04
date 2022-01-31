@@ -102,12 +102,23 @@ body {
   padding-top: 24px;
   padding-bottom: 25px;
 }
+
 .navigation-link {
   color: var(--primary-title-color);
 }
 .navigation-link:hover,
 .navigation-link:focus {
   color: var(--accent-text-color);
+}
+.mail-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+.phone-icon {
+  margin-right: 10px;
+  fill: currentColor;
+  width: 10px;
+  height: 16px;
 }
 .contacts {
   font-style: normal;
@@ -127,7 +138,9 @@ body {
 .head-address {
   display: flex;
   margin-left: auto;
+  align-content: center;
 }
+
 .adress-item:nth-last-child(n + 2) {
   margin-right: 50px;
 }
