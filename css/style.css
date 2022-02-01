@@ -146,7 +146,6 @@ body {
 .contacts {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 .flex {
   align-items: center;
@@ -199,22 +198,20 @@ body {
   height: 50px;
 }
 /*---------------особенности------------------- */
-.peculiarities-list-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 30px;
-}
-.peculiarities-item-icon {
+
+.peculiarities-icon {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 120px;
-  width: 270px;
   background-color: #f5f4fa;
+  margin-bottom: 30px;
+}
+.peculiarities-icon-item {
+  height: 100%;
 }
 
-.peculiarities-item-icon + .peculiarities-item-icon {
+.peculiarities-icon + .peculiarities-icon {
   margin-left: 30px;
 }
 .peculiarities-list {
@@ -332,13 +329,8 @@ body {
 .clients-item {
   width: 170px;
   height: 92px;
-  border: 1px solid #afb1b8;
+
   box-sizing: border-box;
-  border-radius: 4px;
-  color: #afb1b8;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .clients-item + .clients-item {
   margin-left: 30px;
@@ -346,8 +338,18 @@ body {
 .clients-item-icon {
   fill: currentColor;
 }
-.clients-item:hover,
-.clients-item:focus {
+.clients-link {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  color: #afb1b8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.clients-link:hover,
+.clients-link:focus {
   color: var(--accent-text-color);
   border-color: var(--accent-text-color);
 }
@@ -360,8 +362,6 @@ body {
 }
 .footer-container {
   display: flex;
-  justify-content: center;
-  align-content: center;
   align-items: baseline;
 }
 .left {
@@ -417,9 +417,6 @@ body {
 }
 .right {
   margin-right: auto;
-
-  width: 206px;
-  height: 80px;
 }
 .foter-social-title {
   font-style: normal;
@@ -429,6 +426,7 @@ body {
   text-transform: uppercase;
   color: var(--primary-white-color);
   margin-bottom: 20px;
+  text-align: left;
 }
 
 .footer-social-list {
@@ -533,10 +531,14 @@ body {
 }
 .content {
   padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 .portfolio-card {
+  display: block;
   background: #ffffff;
-  border: 1px solid #eeeeee;
+
   box-sizing: border-box;
 }
 .portfolio-card:hover,
